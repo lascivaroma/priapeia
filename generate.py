@@ -11,7 +11,7 @@ poems = []
 translations = []
 second_translations = []
 
-download = range(0, 95)
+download = range(0, 96)
 URI = "http://www.sacred-texts.com/cla/priap/prp{}.htm"
 
 NOTES_INSERT = re.compile("\[(\d+)\]")
@@ -36,6 +36,7 @@ def reformat(paragraphs):
         p = normalize(paragraph)
         lines = p.split("<br>")
         lines = ["<l>"+l.replace("\n", "")+"</l>" for l in lines]
+        lines = [x.split("Next:")[0] for x in lines]
         yield "<div type=\"textpart\" subtype=\"poem\">{}</div>".format("\n".join(lines))
 
 
@@ -49,7 +50,7 @@ def replace_notes(translations, input_notes):
     def sub(match):
         index = int(match.groups()[0])
         if index in notes:
-            return "<note type=\"footnote\">"+notes[index]+"</note>"
+            return "<note type=\"footnote\">"+notes[index].split("]")[0]+"</note>"
         else:
             return ""
     for translation in translations:
