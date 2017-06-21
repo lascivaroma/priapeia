@@ -13,22 +13,17 @@
             </publicationStmt>
             <sourceDesc>
                 <bibl>
-                    <title type="collection">Corpus Inscriptionum Latinarum</title>
-                    <idno>Vol IV</idno>
-                    <title type="volume">Inscriptiones parietariae Pompeianae, Herculanenses
-                        Stabianae</title>
-                    <editor role="editor"><name>Schöne</name>, <forename>Richard</forename></editor>
-                    <editor role="editor"><name>Zangemeister</name>, <forename>Karl Friedrich
-                            Wilhelm</forename></editor>
+                    <title>SPORTIVE EPIGRAMS ON PRIAPUS</title>
+                    <title>by divers poets in English verse and prose</title>
+                    <editor role="editor"><name>Smithers</name>, <forename>Leonard <abbr>C.</abbr></forename></editor>
+                    <editor role="editor"><roleName>Sir</roleName> <name>Burton</name>, <forename>Richard</forename></editor>
                     <pubPlace>Leipzig</pubPlace>
-                    <date>1925/1976</date>
+                    <date>1890</date>
                 </bibl>
                 <bibl>
-                    <title>Epigraphische Datenbank Clauss - Slaby</title>
-                    <editor><forename>Manfred</forename>
-                        <name>Klaus</name></editor>
-                    <date>12-06-2017</date>
-                    <ref>http://manfredclauss.de/gb/index.html</ref>
+                    <title>Sacred Text</title>
+                    <date>2000</date>
+                    <ref>http://www.sacred-texts.com/cla/priap/priapeia.htm</ref>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -45,6 +40,7 @@
         <profileDesc>
             <langUsage default="false">
                 <language ident="lat">Latin</language>
+                <language ident="eng">English</language>
             </langUsage>
         </profileDesc>
         <revisionDesc>
@@ -52,8 +48,8 @@
         </revisionDesc>
     </teiHeader>
     <text>
-        <body>
-            <div type="edition" n="" xml:lang="eng">
+        <body n="urn:cts:latinLit:phi1103.phi001.lascivaroma-eng1" xml:lang="eng">
+            <div type="translation" n="" xml:lang="eng">
                 <div type="textpart" subtype="poem" n="1">
                     <l n="1">Thou, who be ready to read these cultureless sallies of singing,</l>
                     <l n="2">Lower awhile yon brow suiting the Latian pride:</l>
@@ -78,11 +74,18 @@
                     <l n="10">And on this Temple-wall for note I lay,</l>
                     <l n="11">Take in good part--such is the prayer I pray.</l>
                 </div>
-
-                <div type="textpart" subtype="poem" n="3">
-                    <l n="1"/>
-                </div>
-
+                
+                <div type="textpart" subtype="poem" n="3"><l n="1">Darkly might I to thee say: Oh give me for ever and ever</l>
+                    <l n="2">What thou may'st constantly give while of it nothing be lost:</l>
+                    <l n="3">Give me what vainly thou'lt long to bestow in the days that are coming</l>
+                    <l n="4">When that invidious beard either soft cheek shall invade;</l>
+                    <l n="5">What unto Jove gave he who, borne by the worshipful flyer,</l>
+                    <l n="6">Mixes the gratefullest cups, ever his leman's delight;</l>
+                    <l n="7">What on the primal night maid gives to her love-longing bridegroom</l>
+                    <l n="8">Dreading ineptly the hurt dealt to a different part.</l>
+                    <l n="9">Simpler far to declare in our Latin, Lend me thy buttocks;</l>
+                    <l n="10">What shall I say to thee else? Dull's the Minerva of me.</l></div>
+                
                 <div type="textpart" subtype="poem" n="4">
                     <l n="1">These tablets, sacred to the Rigid God,</l>
                     <l n="2">From Elephantis' obscene booklets drawn,</l>

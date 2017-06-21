@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -94,33 +91,23 @@
                     </witness>
                 </listWit>
                 <bibl>
-                    <title type="collection">Corpus Inscriptionum Latinarum</title>
-                    <idno>Vol IV</idno>
-                    <title type="volume">Inscriptiones parietariae Pompeianae, Herculanenses
-                        Stabianae</title>
-                    <editor role="editor"><name>Schöne</name>, <forename>Richard</forename></editor>
-                    <editor role="editor"><name>Zangemeister</name>, <forename>Karl Friedrich
-                            Wilhelm</forename></editor>
+                    <title type="collection">Poeta Latini minores</title>
+                    <idno>1</idno>
+                    <title type="volume">Volumen 1</title>
+                    <editor role="editor"><name>Baehrens</name>, <forename>Aemilius</forename></editor>
                     <pubPlace>Leipzig</pubPlace>
-                    <date>1925/1976</date>
-                </bibl>
-                <bibl>
-                    <title>Epigraphische Datenbank Clauss - Slaby</title>
-                    <editor><forename>Manfred</forename>
-                        <name>Klaus</name></editor>
-                    <date>12-06-2017</date>
-                    <ref>http://manfredclauss.de/gb/index.html</ref>
+                    <date>1879</date>
+                    <publisher>Teubner</publisher>
+                    <ref>https://archive.org/details/poetaelatinimino12baeh</ref>
                 </bibl>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
             <refsDecl n="CTS">
-                <cRefPattern n="line" matchPattern="(\w+).(\w+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:l[@n='$2'])">
+                <cRefPattern n="line" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:l[@n='$2'])">
                     <p>This pointer pattern extracts line</p>
                 </cRefPattern>
-                <cRefPattern n="poem" matchPattern="(\w+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                <cRefPattern n="poem" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
                     <p>This pointer pattern extracts poem</p>
                 </cRefPattern>
             </refsDecl>
@@ -128,6 +115,7 @@
         <profileDesc>
             <langUsage default="false">
                 <language ident="lat">Latin</language>
+                <language ident="grc">Ancient Greek</language>
             </langUsage>
         </profileDesc>
         <revisionDesc>
@@ -135,8 +123,8 @@
         </revisionDesc>
     </teiHeader>
     <text>
-        <body>
-            <div type="edition" n="" xml:lang="lat">
+        <body n="urn:cts:latinLit:phi1103.phi001.lascivaroma-lat1" xml:lang="lat">
+            <div type="edition" n="urn:cts:latinLit:phi1103.phi001.lascivaroma-lat1" xml:lang="lat">
                 <div type="textpart" subtype="poem" n="1">
                     <l n="1">Carminis incompti lusus lecture procaces,</l>
                     <l n="2"> conueniens Latio pone supercilium.</l>
@@ -414,17 +402,17 @@
                 <div type="textpart" subtype="poem" n="30">
                     <l n="1">'Falce minax et parte tui maiore, Priape,</l>
                     <l n="2"> ad fontem, quaeso, dic mihi qua sit iter.'</l>
-                    <l n="1">uade per has uites, quarum si carpseris uuam,</l>
-                    <l n="2"> cur aliter sumas, hospes, habebis aquam.</l>
+                    <l n="3">uade per has uites, quarum si carpseris uuam,</l>
+                    <l n="4"> cur aliter sumas, hospes, habebis aquam.</l>
                 </div>
-                <div type="textpart" subtype="poem" n="32">
+                <div type="textpart" subtype="poem" n="31">
                     <l n="1">Donec proterua nil mei manu carpes,</l>
                     <l n="2">licebit ipsa sis pudicior Vesta.</l>
                     <l n="3">sin, haec mei te uentris arma laxabunt,</l>
                     <l n="4">exire ut ipse de tuo queas culo.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="33">
+                <div type="textpart" subtype="poem" n="32">
                     <l n="1">Uuis aridior puella passis,</l>
                     <l n="2">buxo pallidior nouaque cera,</l>
                     <l n="3">collatas sibi quae suisque membris</l>
@@ -441,7 +429,7 @@
                     <l n="14">lanternae uideor fricare cornu.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="34">
+                <div type="textpart" subtype="poem" n="33">
                     <l n="1">Naidas antiqui Dryadasque habuere Priapi,</l>
                     <l n="2"> et quo tenta dei uena subiret, erat.</l>
                     <l n="3">nunc adeo nihil est, adeo mea plena libido est,</l>
@@ -450,7 +438,7 @@
                     <l n="6"> falce mihi posita fiet amica manus.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="35">
+                <div type="textpart" subtype="poem" n="34">
                     <l n="1">Cum sacrum fieret deo salaci,</l>
                     <l n="2">conducta est pretio puella paruo</l>
                     <l n="3">communis satis omnibus futura,</l>
@@ -458,7 +446,7 @@
                     <l n="5">tot uerpas tibi dedicat salignas.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="36">
+                <div type="textpart" subtype="poem" n="35">
                     <l n="1">Pedicabere, fur, semel; sed idem</l>
                     <l n="2">si praedatus eris bis, irrumabo.</l>
                     <l n="3">et si tertia furta molieris,</l>
@@ -466,7 +454,7 @@
                     <l n="5">pedicaberis irrumaberisque.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="37">
+                <div type="textpart" subtype="poem" n="36">
                     <l n="1">Notas habemus quisque corporis formas:</l>
                     <l n="2">Phoebus comosus, Hercules lacertosus,</l>
                     <l n="3">trahit figuram uirginis tener Bacchus,</l>
@@ -480,7 +468,7 @@
                     <l n="11">deus Priapo mentulatior non est.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="38">
+                <div type="textpart" subtype="poem" n="37">
                     <l n="1">Cur pictum memori sit in tabella</l>
                     <l n="2">membrum, quaeritis, unde procreamur?</l>
                     <l n="3">cum penis mihi forte laesus esset</l>
@@ -497,14 +485,14 @@
                     <l n="14">pro nutu deus et rogata fecit.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="39">
+                <div type="textpart" subtype="poem" n="38">
                     <l n="1">Simpliciter tibi me, quodcumque est, dicere oportet,</l>
                     <l n="2"> natura est quoniam semper aperta mihi:</l>
                     <l n="3">pedicare uolo, tu uis decerpere poma;</l>
                     <l n="4"> quod peto, si dederis, quod petis, accipies.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="40">
+                <div type="textpart" subtype="poem" n="39">
                     <l n="1">Forma Mercurius potest placere,</l>
                     <l n="2">forma conspiciendus est Apollo,</l>
                     <l n="3">formosus quoque pingitur Lyaeus,</l>
@@ -515,28 +503,28 @@
                     <l n="8">si qua est non fatui puella cunni.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="41">
+                <div type="textpart" subtype="poem" n="40">
                     <l n="1">Nota Suburanas inter Telethusa puellas,</l>
                     <l n="2"> quae, puta, de quaestu libera facta suo est,</l>
                     <l n="3">cingit inaurata penem tibi, sancte, corona:</l>
                     <l n="4"> hunc pathicae summi numinis instar habent.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="42">
+                <div type="textpart" subtype="poem" n="41">
                     <l n="1">Quisquis uenerit huc, poeta fiat</l>
                     <l n="2">et uersus mihi dedicet iocosos.</l>
                     <l n="3">qui non fecerit, inter eruditos</l>
                     <l n="4">ficosissimus ambulet poetas.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="43">
+                <div type="textpart" subtype="poem" n="42">
                     <l n="1">Laetus Aristagoras natis bene uilicus uuis</l>
                     <l n="2"> de cera pacili dat tibi poma, deus.</l>
                     <l n="3">at tu sacrati contentus imagine pomi</l>
                     <l n="4"> fac ueros fructus ille, Priape, ferat.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="45">
+                <div type="textpart" subtype="poem" n="43">
                     <l n="1">uelle quid hanc dicas, quamuis sim ligneus, adstans,</l>
                     <l n="2"> oscula dat medio si qua puella mihi?</l>
                     <l n="3">augure non opus est: 'in me' (mihi credite), dicit</l>
@@ -550,7 +538,7 @@
                     <l n="4">omnes, ne dubitetis, irrumabo.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="46">
+                <div type="textpart" subtype="poem" n="45">
                     <l n="1">Cum quendam rigidus deus uideret</l>
                     <l n="2">feruenti caput ustulare ferro,</l>
                     <l n="3">ut Maurae similis foret puellae,</l>
@@ -560,7 +548,7 @@
                     <l n="7">quod sunt, mentula quos habet, capilli?'</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="47">
+                <div type="textpart" subtype="poem" n="46">
                     <l n="1">O non candidior puella Mauro,</l>
                     <l n="2">sed morbosior omnibus cinaedis,</l>
                     <l n="3">Pygmaeo breuior gruem timenti,</l>
@@ -573,7 +561,7 @@
                     <l n="10">cunni uermiculos scaturrientis.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="48">
+                <div type="textpart" subtype="poem" n="47">
                     <l n="1">Quicumque uestrum, qui uenitis ad cenam,</l>
                     <l n="2">libare nullos sustinet mihi uersus,</l>
                     <l n="3">illius uxor aut amica riualem</l>
@@ -582,7 +570,7 @@
                     <l n="6">libidinosis incitatus erucis.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="49">
+                <div type="textpart" subtype="poem" n="48">
                     <l n="1">Quod partem madidam mei uidetis,</l>
                     <l n="2">per quam significor Priapus esse,</l>
                     <l n="3">non ros est, mihi crede, nec pruina,</l>
@@ -590,14 +578,14 @@
                     <l n="5">cum mens est pathicae memor puellae.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="50">
+                <div type="textpart" subtype="poem" n="49">
                     <l n="1">Tu, quicumque uides circa tectoria nostra</l>
                     <l n="2"> non nimium casti carmina plena ioci,</l>
                     <l n="3">uersibus obscenis offendi desine: non est</l>
                     <l n="4"> mentula subducti nostra supercilii.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="51">
+                <div type="textpart" subtype="poem" n="50">
                     <l n="1">Quaedam, si placet hoc tibi, Priape,</l>
                     <l n="2">fucosissima me puella ludit</l>
                     <l n="3">et nec dat mihi nec negat daturam,</l>
@@ -607,7 +595,7 @@
                     <l n="7">cingemus tibi mentulam coronis.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="52">
+                <div type="textpart" subtype="poem" n="51">
                     <l n="1">Quid hoc negoti est quaue suspicer causa</l>
                     <l n="2">uenire in hortum plurimos meum fures,</l>
                     <l n="3">cum, quisquis in nos incidit, luat poenas</l>
@@ -638,7 +626,7 @@
                     <l n="28">et uos et ipsum, quod minamur, inuitat.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="53">
+                <div type="textpart" subtype="poem" n="52">
                     <l n="1">Heus tu, non bene qui manum rapacem</l>
                     <l n="2">mandato mihi contines ab horto,</l>
                     <l n="3">iam primum stator hic libidinosus</l>
@@ -653,7 +641,7 @@
                     <l n="12">cum tantum sciat esse mentularum.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="54">
+                <div type="textpart" subtype="poem" n="53">
                     <l n="1">Contentus modico Bacchus solet esse racemo,</l>
                     <l n="2"> cum capiant alti uix cita musta lacus,</l>
                     <l n="3">magnaque fecundis cum messibus area desit,</l>
@@ -662,12 +650,12 @@
                     <l n="6"> quamuis pauca damus, consule poma boni.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="55">
+                <div type="textpart" subtype="poem" n="54">
                     <l n="1">CD si scribas temonemque insuper addas,</l>
                     <l n="2"> qui medium uult te scindere, pictus erit.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="56">
+                <div type="textpart" subtype="poem" n="55">
                     <l n="1">Credere quis possit? falcem quoque - turpe fateri -</l>
                     <l n="2"> de digitis fures subripuere meis.</l>
                     <l n="3">nec mouet amissi tam me iactura pudorque,</l>
@@ -676,7 +664,7 @@
                     <l n="6"> ille tuus ciuis, Lampsace, Gallus ero.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="57">
+                <div type="textpart" subtype="poem" n="56">
                     <l n="1">Derides quoque, fur, et impudicum</l>
                     <l n="2">ostendis digitum mihi minanti?</l>
                     <l n="3">eheu me miserum, quod ista lignum est,</l>
@@ -685,7 +673,7 @@
                     <l n="6">ut pro me uelit irrumare fures.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="58">
+                <div type="textpart" subtype="poem" n="57">
                     <l n="1">Cornix et caries uetusque bustum,</l>
                     <l n="2">turba putida facta saeculorum,</l>
                     <l n="3">quae forsan potuisset esse nutrix</l>
@@ -703,7 +691,7 @@
                     </l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="59">
+                <div type="textpart" subtype="poem" n="58">
                     <l n="1">Quicumque nostram fur fefellerit curam,</l>
                     <l n="2"><app>
                         <rdgGrp type="semantic">
@@ -719,17 +707,17 @@
                     <l n="4">puella, nullum reperiat fututorem.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="60">
+                <div type="textpart" subtype="poem" n="59">
                     <l n="1">Praedictum tibi ne negare possis:</l>
                     <l n="2">si fur ueneris, inpudicus exis.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="61">
+                <div type="textpart" subtype="poem" n="60">
                     <l n="1">Si quot habes uersus, tot haberes poma, Priape,</l>
                     <l n="2"> esses antiquo ditior Alcinoo.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="62">
+                <div type="textpart" subtype="poem" n="61">
                     <l n="1">Quid frustra quereris, colone, mecum,</l>
                     <l n="2">quod quondam bene fructuosa malus</l>
                     <l n="3">autumnis sterilis duobus adstem?</l>
@@ -746,12 +734,12 @@
                     <l n="14">ramis sustineo laboriosis.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="63">
+                <div type="textpart" subtype="poem" n="62">
                     <l n="1">Securi dormite, canes: custodiet hortum</l>
                     <l n="2"> cum sibi dilecta Sirius Erigone.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="64">
+                <div type="textpart" subtype="poem" n="63">
                     <l n="1">Parum est quod, hic ut fiximus semel sedem,</l>
                     <l n="2">agente terra per caniculam rimas</l>
                     <l n="3">siticulosam sustinemus aestatem;</l>
@@ -777,132 +765,128 @@
                     </app>, pruriginosa discedit.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="65">
+                <div type="textpart" subtype="poem" n="64">
                     <l n="1">Quidam mollior anseris medulla</l>
                     <l n="2">furatum uenit huc amore poenae:</l>
                     <l n="3">furetur licet usque, non uidebo.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="66">
+                <div type="textpart" subtype="poem" n="65">
                     <l n="1">Hic tibi qui rostro crescentia lilia morsit,</l>
                     <l n="2"> caeditur e tepida uictima porcus hara:</l>
                     <l n="3">ne tamen exanimum facias pecus omne, Priape,</l>
                     <l n="4"> horti sit, facias, ianua clausa tui.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="67">
+                <div type="textpart" subtype="poem" n="66">
                     <l n="1">Tu, quae ne uideas notam uirilem,</l>
                     <l n="2">hinc auerteris, ut decet pudicam:</l>
                     <l n="3">nimirum, nisi quod times uideri,</l>
                     <l n="4">intra uiscera habere concupiscis.</l>
                 </div>
                 
-                <div type="textpart" subtype="poem" n="68">
+                <div type="textpart" subtype="poem" n="67">
                     <l n="1">Penelopes primam Didonis prima sequatur</l>
                     <l n="2"> et primam Cadmi syllaba prima Remi,</l>
                     <l n="3">quodque fit ex illis, tu mi deprensus in horto,</l>
                     <l n="4"> fur, dabis: hac poena culpa luenda tua est.</l>
                 </div>
                 
-                <!-- Done -->
-                <div type="textpart" subtype="poem" n="69">
+                <div type="textpart" subtype="poem" n="68">
                     <l n="1">Rusticus indocte si quid dixisse uidebor,</l>
                     <l n="2"> da ueniam: libros non lego, poma lego.</l>
                     <l n="3">sed rudis hic dominum totiens audire legentem</l>
-                    <l n="4"> cogor Homereas edidicique notas.</l>
-                    <l n="5">ille uocat, quod nos 'psolen', 'psoloenta keraunon',</l>
-                    <l n="6"> et quod nos culum, 'kouleon' ille uocat.</l>
-                    <l n="7">'merdaleon' certe nisi res non munda uocatur,</l>
+                    <l n="4"> cogor Homeriacas edidicique notas.</l>
+                    <l n="5">ille uocat, quod nos psolen, <q xml:lang="grc">Ψολόεντα κεραυνόν</q>,</l>
+                    <l n="6"> et quod nos culum, <q xml:lang="grc">κουλεόν</q> ille uocat.</l>
+                    <l n="7"><q xml:lang="grc">Μερδαλέον</q> certe si res non munda uocatur,</l>
                     <l n="8"> et pediconum mentula merdalea est.</l>
+                    <l n="9">Qui, nisi Taenario placuisset Troica cunno</l>
+                    <l n="10"> mentula, quod caneret, non habuisset opus.</l>
+                    <l n="11">mentula Tantalidae bene si non mota fuisset,</l>
+                    <l n="12"> nil, senior Chryses quod quereretur, erat.</l>
+                    <l n="13">haec eadem socium tenera spoliauit amica,</l>
+                    <l n="14"> quaeque erat Aeacidae, maluit esse suam.</l>
+                    <l n="15">ille Pelethroniam cecinit miserabile carmen</l>
+                    <l n="16"> ad citharam, cithara tensior ipse sua.</l>
+                    <l n="17">nobilis hinc nata nempe incipit Ilias ira:</l>
+                    
+                    <l n="18"> principium sacri carminis <choice><orig resp="#Baehrens">ile</orig><corr resp="#TClerice #Ls"/></choice> fuit.</l>
+                    <l n="19">altera materia est error fallentis Ulixei;</l>
+                    <l n="20"> si uerum quaeras, hunc quoque mouit amor.</l>
+                    <l n="21">hic legitur radix, de qua flos aureus exit,</l>
+                    
+                    <l n="22"> quam cum <q xml:lang="grc">μῶλυ</q> uocat, mentula <q xml:lang="grc">μῶλυ</q> fuit.</l>
+                    <l n="23">hic legimus Circen Atlantiademque Calypson</l>
+                    <l n="24"> grandia Dulichii uasa petisse uiri.</l>
+                    <l n="25">huius et Alcinoi mirata est filia membrum</l>
+                    <l n="26"> frondenti ramo uix potuisse tegi.</l>
+                    <l n="27">ad uetulam tamen ille suam properabat, et omnis</l>
+                    <l n="28"> mens erat in cunno, Penelopea, tuo:</l>
+                    <l n="29">quae sic casta manes, ut iam conuiuia uisas</l>
+                    <l n="30"> utque fututorum sit tua plena domus.</l>
+                    <l n="31">e quibus ut scires quicumque ualentior esset,</l>
+                    <l n="32"> haec es ad arrectos uerba locuta procos:</l>
+                    <l n="33">'nemo meo melius neruum tendebat Ulixe,</l>
+                    
+                    <l n="34"> siue illi laterum siue erat artis opus.</l>
+                    <l n="35">qui quoniam periit, uos nunc intendite, quemquem</l>
+                    <l n="36"> esse uirum sciero, uir sit ut ille meus.'</l>
+                    <l n="37">hac ego, Penelope, potui tibi lege placere,</l>
+                    <l n="38"> illo sed nondum tempore natus eram.</l>
                 </div>
-
-                <div type="textpart" subtype="poem" n="70">
-                    <l n="1">Quid? nisi Taenario placuisset Troica cunno</l>
-                    <l n="2"> mentula, quod caneret, non habuisset opus.</l>
-                    <l n="3">mentula Tantalidae bene si non nota fuisset,</l>
-                    <l n="4"> nil, senior Chryses quod quereretur, erat.</l>
-                    <l n="5">haec eadem socium tenera spoliauit amica,</l>
-                    <l n="6"> quaeque erat Aeacidae, maluit esse suam.</l>
-                    <l n="7">ille Pelethroniam cecinit miserabile carmen</l>
-                    <l n="8"> ad citharam, cithara tensior ipse sua.</l>
-                    <l n="9">nobilis hinc nata nempe incipit Ilias ira,</l>
-                    <l n="10"> principium sacri carminis illa fuit.</l>
-                    <l n="11">altera materia est error fallentis Ulixei;</l>
-                    <l n="12"> si uerum quaeras, hunc quoque mouit amor.</l>
-                    <l n="13">hic legitur radix, de qua flos aureus exit,</l>
-                    <l n="14"> quam cum 'molu' uocat, mentula 'molu' fuit.</l>
-                    <l n="15">hic legimus Circen Atlantiademque Calypson</l>
-                    <l n="16"> grandia Dulichii uasa petisse uiri.</l>
-                    <l n="17">huius et Alcinoi mirata est filia membrum</l>
-                    <l n="18"> frondenti ramo uix potuisse tegi.</l>
-                    <l n="19">ad uetulam tamen ille suam properabat, et omnis</l>
-                    <l n="20"> mens erat in cunno, Penelopea, tuo:</l>
-                    <l n="21">quae sic casta manes, ut iam conuiuia uisas</l>
-                    <l n="22"> utque fututorum sit tua plena domus.</l>
-                    <l n="23">e quibus ut scires quicumque ualentior esset,</l>
-                    <l n="24"> haec es ad arrectos uerba locuta procos:</l>
-                    <l n="25">'nemo meo melius neruum tendebat Ulixe,</l>
-                    <l n="26"> siue illi laterum siue erat artis opus.</l>
-                    <l n="27">qui quoniam periit, uos nunc intendite, qualem</l>
-                    <l n="28"> esse uirum sciero, uir sit ut ille meus.'</l>
-                    <l n="29">hac ego, Penelope, potui tibi lege placere,</l>
-                    <l n="30"> illo sed nondum tempore factus eram.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="71">
+                
+                <div type="textpart" subtype="poem" n="69">
                     <l n="1">Cum fici tibi suauitas subibit</l>
                     <l n="2">et iam porrigere huc manum libebit,</l>
                     <l n="3">ad me respice, fur, et aestimato,</l>
                     <l n="4">quot pondo est tibi mentulam cacandum.</l>
                 </div>
-
-                <div type="textpart" subtype="poem" n="72">
+                
+                <div type="textpart" subtype="poem" n="70">
                     <l n="1">Illusit mihi pauper inquilinus:</l>
-                    <l n="2">cum libum dederat molaque fusa,</l>
-                    <l n="3">quadrae partibus abditis in ignem,</l>
+                    <l n="2">cum ferctum dederat molamque tusam,</l>
+                    <l n="3">quorum partibus abditis in ignem,</l>
                     <l n="4">sacro protinus hinc abit peracto.</l>
                     <l n="5">uicini canis huc subinde uenit</l>
                     <l n="6">nidorem, puto, persecuta fumi,</l>
                     <l n="7">quae libamine mentulae comeso</l>
                     <l n="8">tota nocte mihi litat rigendo.</l>
                     <l n="9">at uos amplius hoc loco cauete</l>
-                    <l n="10">quicquam ponere, ne famelicorum</l>
+                    <l n="10">quicquam ponere, ne famelicarum</l>
                     <l n="11">ad me turba uelit canum uenire,</l>
                     <l n="12">ne dum me colitis meumque numen,</l>
                     <l n="13">custodes habeatis irrumatos.</l>
                 </div>
+                
+                <div type="textpart" subtype="poem" n="71">
+                    <l n="1">Si commissa meae carpes pomaria curae,</l>
+                    <l n="2"> dulcia qui doleam perdere, doctus eris.</l>
+                </div>
+                
+                <div type="textpart" subtype="poem" n="72">
+                    <l n="1"><add>Tutelam pomarii, diligens Priape, facito</add>:</l>
+                    <l n="2"><add>rubricato furibus minare mutinio.</add></l>
+                    <l n="3">Quod mouear, non est, quia, si furaberis ipse</l>
+                    <l n="4"> grandia mala, tibi brachia macra dabo.</l>
+                </div>
 
                 <div type="textpart" subtype="poem" n="73">
-                    <l n="1">Si commissa meae carpes pomaria curae,</l>
-                    <l n="2"> dulcia quid doleam perdere, doctus eris.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="74">
-                    <l n="1">Tutelam pomarii, diligens Priape, facito:</l>
-                    <l n="2">rubricato furibus minare mutinio.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="75">
-                    <l n="1">Quod monear, non est, quia si furaberis ipse</l>
-                    <l n="2"> grandia mala, tibi bracchia macra dabo.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="76">
                     <l n="1">Obliquis quid me, pathicae, spectatis ocellis?</l>
                     <l n="2"> non stat in inguinibus mentula tenta meis.</l>
                     <l n="3">quae tamen exanimis nunc est et inutile lignum,</l>
                     <l n="4"> utilis haec, aram si dederitis, erit.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="77">
+                <div type="textpart" subtype="poem" n="74">
                     <l n="1">Per medios ibit pueros mediasque puellas</l>
                     <l n="2"> mentula, barbatis non nisi summa petet.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="78">
+                <div type="textpart" subtype="poem" n="75">
                     <l n="1">Dodone tibi, Iuppiter, sacrata est,</l>
                     <l n="2">Iunoni Samos et Mycena ditis,</l>
-                    <l n="3">undae Taenaros aequorisque regi;</l>
+                    <l n="3">undae Taenaros aequorumque regi;</l>
                     <l n="4">Pallas Cecropias tuetur arces,</l>
                     <l n="5">Delphos Pythius, orbis umbilicum,</l>
                     <l n="6">Creten Delia Cynthiosque colles,</l>
@@ -913,294 +897,65 @@
                     <l n="11">tardo gratior aestuosa Lemnos;</l>
                     <l n="12">Hennaeae Cererem nurus frequentant,</l>
                     <l n="13">raptam Cyzicos ostreosa diuam,</l>
-                    <l n="14">formosam uenerem Cnidos Paphosque;</l>
-                    <l n="15">mortales tibi Lampsacum dicarunt.</l>
+                    <l n="14">formosam uenerem Gnidos Paphosque;</l>
+                    <l n="15"><del resp="#Baehrens">mortales tibi Lampsacum dicarunt.</del></l>
+                    <l n="16"><gap reason="lost" unit="lines" atLeast="1"/></l>
+                    <l n="17">Quod sim iam senior meumque canis</l>
+                    <l n="18">Cum barba caput albicet capillis:</l>
+                    <l n="19">Deprensos ego perforare possum</l>
+                    <l n="20">Tithonum Priamumque Nestoremque.</l>
+                </div>
+                
+                <div type="textpart" subtype="poem" n="76">
+                    <l n="1">Inmanem stomachum mihi cietis,</l>
+                    <l n="2">qui densam facitis subinde saepem</l>
+                    <l n="3">et fures prohibetis huc adire.</l>
+                    <l n="4">hoc est laedere, dum iuuatis; hoc est</l>
+                    <l n="5">non admittere ad aucupem uolucres.</l>
+                    <l n="6">obstructa est uia, nec licet iacenti</l>
+                    <l n="7">iactura natis expiare culpam.</l>
+                    <l n="8">ergo qui prius usque et usque et usque</l>
+                    <l n="9">furum scindere podices solebam,</l>
+                    <l n="10">per noctes aliquot diesque cesso.</l>
+                    <l n="11">poenas do quoque, quot satis superque est,</l>
+                    <l n="12">in semenque abeo salaxque quondam</l>
+                    <l n="13">nunc uitam perago - quis hoc putaret? -</l>
+                    <l n="14">ut clusus citharoedus abstinacem.</l>
+                    <l n="15">at uos, ne peream situ senili,</l>
+                    <l n="16">quaeso, desinite esse diligentes</l>
+                    <l n="17">neue inponite fibulam Priapo.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="79">
-                    <l n="1">Quod sum iam senior meumque canis</l>
-                    <l n="2">Cum barba caput albicet capillis:</l>
-                    <l n="3">Deprensos ego perforare possum</l>
-                    <l n="4">Tithonum Priamumque Nestoremque.</l>
-                    <l n="5">Immanem stomachum mihi mouetis,</l>
-                    <l n="6">qui densam facitis subinde saepem</l>
-                    <l n="7">et fures prohibetis huc adire.</l>
-                    <l n="8">hoc est laedere, dum iuuatis; hoc est</l>
-                    <l n="9">non admittere ad aucupem uolucres.</l>
-                    <l n="10">obstructa est uia, nec licet iacenti</l>
-                    <l n="11">iactura natis expiare culpam.</l>
-                    <l n="12">ergo qui prius usque et usque et usque</l>
-                    <l n="13">furum scindere podices solebam,</l>
-                    <l n="14">per noctes aliquot diesque cesso.</l>
-                    <l n="15">poenas do quoque, quot satis superque est,</l>
-                    <l n="16">in semenque abeo salaxque quondam</l>
-                    <l n="17">nunc uitam perago - quis hoc putaret? -</l>
-                    <l n="18">ut clusus citharoedus abstinentem.</l>
-                    <l n="19">at uos, ne peream situ senili,</l>
-                    <l n="20">quaeso, desinite esse diligentes</l>
-                    <l n="21">neue imponite fibulam Priapo.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="80">
+                <div type="textpart" subtype="poem" n="77">
                     <l n="1">At di deaeque dentibus tuis escam</l>
                     <l n="2">negent, amicae cunnilinge uicinae,</l>
                     <l n="3">per quem puella fortis ante nec mendax</l>
-                    <l n="4">et quae solebat impigro celer passu</l>
+                    <l n="4">et quae solebat inpigro celer passu</l>
                     <l n="5">ad nos uenire, nunc misella landicae</l>
                     <l n="6">uix posse iurat ambulare prae fossis.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="81">
+                <div type="textpart" subtype="poem" n="78">
                     <l n="1">Priape, quod sis fascino grauis tento,</l>
-                    <l n="2">quod exprobrauit hanc tibi suo uersu</l>
+                    <l n="2">quod exprobrauit hoc tibi suo uersu</l>
                     <l n="3">poeta noster, erubescere hoc noli:</l>
-                    <l n="4">non es poeta sarcinosior nostro.</l>
+                    <l n="4">non es poeta fascinosior nostro.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="82">
-                    <l n="1">At non longa bene est, non stat bene mentula crassa</l>
+                <div type="textpart" subtype="poem" n="79">
+                    <l n="1">At non longa benest, at non bene mentula crassa</l>
                     <l n="2"> et quam si tractes, crescere posse putes?</l>
                     <l n="3">me miserum, cupidas fallit mensura puellas:</l>
-                    <l n="4"> non habet haec aliud mentula maius eo.</l>
+                    <l n="4"> non habet haec aliquid mentula maius ero.</l>
                     <l n="5">utilior Tydeus qui, si quid credis Homero,</l>
                     <l n="6"> ingenio pugnax, corpore paruus erat.</l>
-                    <l n="7">sed potuit damno nobis nouitasque pudorque</l>
-                    <l n="8"> esse, repellendus saepius iste mihi.</l>
+                    <l n="7"><gap unit="lines" extent="unknown"/></l>
+                    <l n="8">sed potuit damno nobis nouitasque pudorque</l>
+                    <l n="9"> esse, repellendus saepius iste mihi.</l>
+                    <l n="10">Dum uiuis, sperare decet: tu, rustice custos,</l>
+                    <l n="11"> huc ades et neruis, tente Priape, faue.</l>
                 </div>
 
-                <div type="textpart" subtype="poem" n="83">
-                    <l n="1">Dum uiuis, sperare decet: tu, rustice custos,</l>
-                    <l n="2"> huc ades et neruis, tente Priape, faue.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="84">
-                    <l n="1">uilicus aerari quondam, nunc cultor agelli</l>
-                    <l n="2">haec tibi perspectus templa, Priape, dico.</l>
-                    <l n="3">Pro quibus officiis si fas est, sancte, paciscor,</l>
-                    <l n="4">assiduus custos ruris ut esse uelis.</l>
-                    <l n="5">Improbus ut si quis nostrum uiolarit agellum,</l>
-                    <l n="6">hunc tu -- sed tento. Scis, puto, quod sequitur.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="85">
-                    <l n="1">Quid hoc noui est? Quid ira nuntiat deum?</l>
-                    <l n="2">Silente nocte candidus mihi puer</l>
-                    <l n="3">tepente cum iaceret abditus sinu,</l>
-                    <l n="4">uenus fuit quieta, nec uiriliter</l>
-                    <l n="5">iners senile penis extulit caput.</l>
-                    <l n="6">Placet, Priape, qui sub arboris coma</l>
-                    <l n="7">soles, sacrum reuincte pampino caput,</l>
-                    <l n="8">ruber sedere cum rubente fascino?</l>
-                    <l n="9">At, o Triphalle, saepe floribus nouis</l>
-                    <l n="10">tuas sine arte deligauimus comas,</l>
-                    <l n="11">abegimusque uoce saepe, cum tibi</l>
-                    <l n="12">senexue coruus impigerue graculus</l>
-                    <l n="13">sacrum feriret ore corneo caput.</l>
-                    <l n="14">uale nefande destitutor inguinum,</l>
-                    <l n="15">uale Priape: debeo tibi nihil.</l>
-                    <l n="16">Iacebis inter arua pallidus situ,</l>
-                    <l n="17">canisque saeua susque ligneo tibi</l>
-                    <l n="18">lutosus affricabit oblitum latus.</l>
-                    <l n="19">At o sceleste penis, o meum malum,</l>
-                    <l n="20">graui piaque lege noxiam lues.</l>
-                    <l n="21">Licet querare, nec tibi tener puer</l>
-                    <l n="22">patebit ullus, imminente qui toro</l>
-                    <l n="23">iuuante uerset arte mobilem natem,</l>
-                    <l n="24">puella nec iocosa te leui manu</l>
-                    <l n="25">fouebit apprimetue lucidum femur.</l>
-                    <l n="26">Bidens amica Romluli senis memor</l>
-                    <l n="27">paratur, inter atra cuius inguina</l>
-                    <l n="28">latet iacente pantice abditus specus,</l>
-                    <l n="29">uagaque pelle tectus annuo gelu</l>
-                    <l n="30">araneosus obsidet forem situs.</l>
-                    <l n="31">Tibi haec paratur, ut tuum ter aut quater</l>
-                    <l n="32">uoret profunda fossa lubricum caput.</l>
-                    <l n="33">Licebit aeger angue lentior cubes,</l>
-                    <l n="34">tereris usque, donec (a miser! miser!)</l>
-                    <l n="35">triplexque quadruplexque compleas specum.</l>
-                    <l n="36">Superbia ista proderit nihil, simul</l>
-                    <l n="37">uagum sonante merseris caput luto.</l>
-                    <l n="38">Quid est, iners? Pigetne lentitudinis?</l>
-                    <l n="39">Licebit hoc inultus auferas semel,</l>
-                    <l n="40">sed ille cum redibit aureus puer,</l>
-                    <l n="41">simul sonante senseris iter pede,</l>
-                    <l n="42">rigente neruos excubet libidine,</l>
-                    <l n="43">et inquietus inguina arrigat tumor,</l>
-                    <l n="44">neque incitare cesset usque dum mihi</l>
-                    <l n="45">uenus iocosa molle ruperit latus.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="86">
-                    <l n="1">Non horti neque palmitis beati</l>
-                    <l n="2">sed rari nemoris, Priape, custos,</l>
-                    <l n="3">ex quo natus es et potes renasci,</l>
-                    <l n="4">furaces, moneo, manus repellas</l>
-                    <l n="5">et siluam domini focis reserues:</l>
-                    <l n="6">si defecerit haec, et ipse lignum es.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="87">
-                    <l n="1">uere rosa, autumno pomis, aestate frequentor</l>
-                    <l n="2">spicis; una mihi est horrida pestis hiemps.</l>
-                    <l n="3">Nam frigus metuo et uereor, ne ligneus ignem</l>
-                    <l n="4">hic deus ignauis praebeat agricolis.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="88">
-                    <l n="1">Ego haec, ego arte fabricata rustica,</l>
-                    <l n="2">ego arida, o uiator, ecce populus</l>
-                    <l n="3">agellulum hunc, sinistra et ante quem uides,</l>
-                    <l n="4">erique uillulam hortulumque pauperis</l>
-                    <l n="5">tuor malaque furis arceo manu.</l>
-                    <l n="6">Mihi corolla picta uere ponitur,</l>
-                    <l n="7">mihi rubens arista sole feruido,</l>
-                    <l n="8">mihi uirente dulcis uua pampino,</l>
-                    <l n="9">mihi caduca oliua, cocta frigore.</l>
-                    <l n="10">Meis capella delicata pascuis</l>
-                    <l n="11">in urbem adulta lacte portat unbera,</l>
-                    <l n="12">meisque pinguis agnus ex ouilibus</l>
-                    <l n="13">grauem domum remittit aere dexteram,</l>
-                    <l n="14">teneraque matre mugiente uaccula</l>
-                    <l n="15">deum profundit ante templa sanguinem.</l>
-                    <l n="16">Proin, uiator, hunc deum uereberis</l>
-                    <l n="17">manumque sursum habebis. Hoc tibi expedit,</l>
-                    <l n="18">parata namque crux stat ecce mentula.</l>
-                    <l n="19">"uelim pol" inquis? At pol ecce uilicus</l>
-                    <l n="20">uenit, ualente cui reuulsa bracchio</l>
-                    <l n="21">fit ista mentula apta claua dexterae.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="89">
-                    <l n="1">Hunc ego, o iuuenes, locum uillulamque palustrem</l>
-                    <l n="2">tectam uimine iunceo caricisque maniplis</l>
-                    <l n="3">quercus arida rustica fomitata securi</l>
-                    <l n="4">nutrior. Magis et magis fit beata quontannis!</l>
-                    <l n="5">Huius nam domini colunt me deumque salutant</l>
-                    <l n="6">pauperis tuguri pater filiusque adulescens,</l>
-                    <l n="7">alter assidua colens diligentia, ut herbae</l>
-                    <l n="8">asper aut rubus a meo sint remota sacello,</l>
-                    <l n="9">alter parua manu ferens saepe munera larga.</l>
-                    <l n="10">Florido mihi ponitur picta uere corolla,</l>
-                    <l n="11">primitus tenera uirens spica mollis arista,</l>
-                    <l n="12">luteae uiolae mihi lacteumque papauer</l>
-                    <l n="13">pallentesque cucurbitae et suaue olentia mala,</l>
-                    <l n="14">uua pampinea rubens educata sub umbra.</l>
-                    <l n="15">Sanguine haec etiam mihi (sed tscebitis) arma</l>
-                    <l n="16">barbatus linit hirculus cornipesque capella.</l>
-                    <l n="17">Pro quis omnia honoribus nunc necesse Priapo est</l>
-                    <l n="18">praestare et domini hortulum uineamque tueri.</l>
-                    <l n="19">Quare hinc, o pueri, malas abstinete rapinas.</l>
-                    <l n="20">uincinus prope diuers est neglegensque Priapus.</l>
-                    <l n="21">Inde sumite, semita haec deinde uos feret ipsa.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="90">
-                    <l n="1">Hunc lucum tibi dedico consecroque, Priape,</l>
-                    <l n="2">qua domus tua Lampsaci est quaque cella, Priape.</l>
-                    <l n="3">Nam te praecipue in suis urbibus colit ora</l>
-                    <l n="4">Hellespontia, ceteris ostrior oris.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="91">
-                    <l n="1">Tu qui pene uiros terres et falce cinaedos,</l>
-                    <l n="2">iugera sepositi pauca tuere soli.</l>
-                    <l n="3">sic tua non intrent uetuli pomaria fures</l>
-                    <l n="4">sed puer et longis pulchra puella comis.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="92">
-                    <l n="1">Non sum de fragili dolatus ulmo,</l>
-                    <l n="2">nec quae stat rigida supina uena</l>
-                    <l n="3">de ligno mihi quolibet columna est,</l>
-                    <l n="4">sed uiua generata de cupressu,</l>
-                    <l n="5">quae nec saecula centiens peracta</l>
-                    <l n="6">nec longae cariem timet senectae.</l>
-                    <l n="7">hanc tu, quisquis es o malus, timeto,</l>
-                    <l n="8">nam si uel minimos manu rapaci</l>
-                    <l n="9">hoc de palmite laeseris racemos,</l>
-                    <l n="10">nascetur, licet hoc uelis negare,</l>
-                    <l n="11">inserta tibi ficus a cupressu.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="93">
-                    <l n="1">Fur notae nimium rapacitatis</l>
-                    <l n="2">compilare Cilix uolebat hortum,</l>
-                    <l n="3">ingenti sed erat, Fabulle, in horto</l>
-                    <l n="4">praeter marmoreum nihil Priapum.</l>
-                    <l n="5">Dum non uolt uacua manu redire,</l>
-                    <l n="6">ipsum subripuit Cilix Priapum.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="94">
-                    <l n="1">Non rudis indocta fecit me falce colonus:</l>
-                    <l n="2">dispensatoris nobile cernis opus.</l>
-                    <l n="3">Nam Caeretani cultor ditissimus agri</l>
-                    <l n="4">hos Hilarus colles et iuga laeta tenet.</l>
-                    <l n="5">Aspice quam certo uidear non ligneus ore</l>
-                    <l n="6">nec deuota focis inguinis arma geram,</l>
-                    <l n="7">sed mihi perpetua numquam moritura cupresso</l>
-                    <l n="8">Phidiaca rigeat mentula digna manu.</l>
-                    <l n="9">uicini, moneo, sanctum celebrate Priapum</l>
-                    <l n="10">et bis septenis parcite iugeribus.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="95">
-                    <l n="1">Si uis esse satur, nostrum potes esse Priapum:</l>
-                    <l n="2">Ipsa licet rodas inguina, purus eris.</l>
-                </div>
-
-                <div type="textpart" subtype="poem" n="96">
-                    <l n="1">Olim truncus eram ficulnus, inutile lignum,</l>
-                    <l n="2">cum faber, incertus scamnum faceretne Priapum,</l>
-                    <l n="3">maluit esse deum. deus inde ego, furum auiumque</l>
-                    <l n="4">maxima formido; nam fures dextra coercet</l>
-                    <l n="5">obscaenoque ruber porrectus ab inguine palus;</l>
-                    <l n="6">ast importunas uolucres in uertice harundo</l>
-                    <l n="7">terret fixa uetatque nouis considere in hortis.</l>
-                    <l n="8">Huc prius angustis eiecta cadauera cellis</l>
-                    <l n="9">conseruus uili portanda locabat in arca;</l>
-                    <l n="10">hoc miserae plebi stabat commune sepulcrum,</l>
-                    <l n="11">Pantolabo scurrae Nomentanoque nepoti:</l>
-                    <l n="12">mille pedes in fronte, trecentos cippus in agrum</l>
-                    <l n="13">hic dabat, heredes monumentum ne sequeretur.</l>
-                    <l n="14">Nunc licet Esquiliis habitare salubribus atque</l>
-                    <l n="15">aggere in aprico spatiari, quo modo tristes</l>
-                    <l n="16">albis informem spectabant ossibus agrum;</l>
-                    <l n="17">cum mihi non tantum furesque feraeque, suetae</l>
-                    <l n="18">hunc uexare locum, curae sunt atque labori,</l>
-                    <l n="19">quantum carminibus quae uersant atque uenenis</l>
-                    <l n="20">humanos animos. Has nullo perdere possum</l>
-                    <l n="21">nec prohibere modo, simul ac uaga luna decorum</l>
-                    <l n="22">protulit os, quin ossa legant herbasque nocentis.</l>
-                    <l n="23">uidi egomet nigra succinctam uadere palla</l>
-                    <l n="24">Canidiam pedibus nudis passoque capillo,</l>
-                    <l n="25">cum Sagana maiore ululantem. Pallor utrasque</l>
-                    <l n="26">fecerat horrendas aspectu. Scalpere terram</l>
-                    <l n="27">unguibus et pullam diuellere mordicus agnam</l>
-                    <l n="28">coeperunt; cruor in fossam confusus, ut inde</l>
-                    <l n="29">manis elicerent animas responsa daturas.</l>
-                    <l n="30">Lanea et effigies erat altera cerea; maior</l>
-                    <l n="31">lanea, quae poenis compesceret inferiorem;</l>
-                    <l n="32">cerea suppliciter stabat seruilibus, ut quae</l>
-                    <l n="33">iam peritura modis. Hecaten uocat altera, saeuam</l>
-                    <l n="34">altera Tisiphonen; serpentes atque uideres</l>
-                    <l n="35">infernas errare canes, Lunamque rubentem,</l>
-                    <l n="36">ne foret his testis, post magna latere sepulcra.</l>
-                    <l n="37">Mentior at si quid, merdis caput inquiner albis</l>
-                    <l n="38">coruorum, atque in me ueniat mictum atque cacatum</l>
-                    <l n="39">Iulius et fragilis Pediatia furque uoranus.</l>
-                    <l n="40">Singula quid memorem,? quo pacto alterna loquentes</l>
-                    <l n="41">umbrae cum Sagana resonarint triste et acutum,</l>
-                    <l n="42">utque lupi barbam uariae cum dente colubrae</l>
-                    <l n="43">abdiderint furtim terris, et imagine cerea</l>
-                    <l n="44">largior arserit ignis, et ut non testis inultus</l>
-                    <l n="45">horruerim uoces Furiarum et facta duarum:</l>
-                    <l n="46">nam, displosa sonat quantum uesica, pepidi</l>
-                    <l n="47">diffissa nate ficus: at illae currere in urbem;</l>
-                    <l n="48">Canidiae dentis, altum Saganae caliendrum</l>
-                    <l n="49">excidere atque herbas atque incantata lacertis</l>
-                    <l n="50">uincula cum magno risuque iocoque uideres.</l>
-                </div>
             </div>
         </body>
     </text>
