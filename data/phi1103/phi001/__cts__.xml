@@ -5,7 +5,7 @@
     
     <edition urn="urn:cts:latinLit:phi1103.phi001.lascivaroma-lat1" xml:lang="lat" workUrn="urn:cts:latinLit:phi1103.phi001">
         <label xml:lang="eng">Priapeia from Poeta Latini minores</label>
-        <description xml:lang="unk">Poeta Latini minores, ed. Aemilius Baehrens, Leipzig, Teubner, 1879</description>
+        <description xml:lang="mul">Poeta Latini minores, ed. Aemilius Baehrens, Leipzig, Teubner, 1879</description>
         <cpt:structured-metadata>
             <dct:source>https://archive.org/details/poetaelatinimino12baeh2</dct:source>
             <dct:contributor >Thibault Clérice</dct:contributor>
