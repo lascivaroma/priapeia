@@ -1,0 +1,5 @@
+data/phi1103/__cts__.xml
+data/phi1103/phi001/__cts__.xml
+data/phi1103/phi001/phi1103.phi001.lascivaroma-eng1.xml
+data/phi1103/phi001/phi1103.phi001.lascivaroma-eng2.xml
+data/phi1103/phi001/phi1103.phi001.lascivaroma-lat1.xml
