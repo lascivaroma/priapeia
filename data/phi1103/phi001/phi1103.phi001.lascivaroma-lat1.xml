@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader type="text">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Priapeia</title>
@@ -20,6 +23,17 @@
                     Clérice's PhD at the University of Lyon 3 and under contract at the École Nationale des Chartes -->
             </publicationStmt>
             <sourceDesc>
+                <listPerson>
+                    <person xml:id="Callebat">
+                        <name><forename>Louis</forename><name>Callebat</name></name>
+                        <affiliation>Université de Caen</affiliation>
+                        <bibl>
+                            <title>Priapées</title>
+                            <publisher>Les Belles Lettres</publisher>
+                            <date>2017</date>
+                        </bibl>
+                    </person>
+                </listPerson>
                 <listWit>
                     <witness xml:id="A">codex Laurentiamus plut. 33, 31 saeculo XIV
                         medio scriptus a me primo, qui a. 1876 contuli, adhibitus est</witness>
@@ -189,7 +203,10 @@
 
                 <div type="textpart" subtype="poem" n="7">
                     <l n="1">Cum loquor, una mihi peccatur littera; nam te</l>
-                    <l n="2"><choice><sic>pe-dico</sic><corr resp="#TClerice">pedico</corr></choice> semper blaesaque lingua mihi est.</l>
+                    <l n="2">
+                        <choice><sic>pe-dico</sic><corr resp="#TClerice">pedico</corr></choice>
+                        
+                        semper blaesaque lingua mihi est.</l>
                 </div>
 
                 <div type="textpart" subtype="poem" n="8">
@@ -304,9 +321,9 @@
                 </div>
 
                 <div type="textpart" subtype="poem" n="19">
-                    <l n="1">Si quando Telethusa circulatrix,</l>
+                    <l n="1"><app><lem resp="#Baehrens">Si</lem><rdg wit="#Os">Hic</rdg></app> quando Telethusa circulatrix,</l>
                     <l n="2">quae clunem tunica tegente nulla</l>
-                    <l n="3">Aestu altius altiusque motat,</l>
+                    <l n="3"><app><lem resp="#Baehrens">Aestu</lem><rdg wit="#Os">Extis</rdg></app> <app><lem resp="#Baehrens">latius</lem><rdg wit="#Os">satius</rdg></app> altiusque motat,</l>
                     <l n="4">crisabit tibi fluctuante lumbo:</l>
                     <l n="5">haec sic non modo te, Priape, possit,</l>
                     <l n="6">priuignum quoque sed mouere Phaedrae.</l>
@@ -322,7 +339,7 @@
                 </div>
 
                 <div type="textpart" subtype="poem" n="21">
-                    <l n="1">Copia me seruet: tu suffragare rogatus</l>
+                    <l n="1">Copia me <app><lem resp="#Baehrens">seruet</lem><rdg wit="#Os">perdit</rdg></app>: tu suffragare rogatus</l>
                     <l n="2"> indicio nec me prode, Priape, tuo,</l>
                     <l n="3">quaeque tibi posui tamquam uernacula poma,</l>
                     <l n="4"> de sacra nulli dixeris esse uia.</l>
@@ -504,8 +521,14 @@
                 </div>
 
                 <div type="textpart" subtype="poem" n="40">
-                    <l n="1">Nota Suburanas inter Telethusa puellas,</l>
-                    <l n="2"> quae, puta, de quaestu libera facta suo est,</l>
+                    <l n="1">Nota <app>
+                        <lem resp="#Baehrens">Suburanas</lem>
+                        <rdg wit="#Os">sub urbanas</rdg>
+                    </app> inter Telethusa puellas,</l>
+                    <l n="2"> quae, <app>
+                        <lem resp="#Baehrens">puta</lem>
+                        <rdg wit="#Os">puto</rdg>
+                    </app>, de quaestu libera facta suo est,</l>
                     <l n="3">cingit inaurata penem tibi, sancte, corona:</l>
                     <l n="4"> hunc pathicae summi numinis instar habent.</l>
                 </div>
@@ -519,16 +542,26 @@
                 
                 <div type="textpart" subtype="poem" n="42">
                     <l n="1">Laetus Aristagoras natis bene uilicus uuis</l>
-                    <l n="2"> de cera pacili dat tibi poma, deus.</l>
+                    <l n="2"> de cera <app>
+                        <lem resp="#Baehrens">parili</lem>
+                        <rdg wit="#Os">facta</rdg>
+                        <rdg resp="#Callebat">ficta</rdg>
+                    </app> dat tibi poma, deus.</l>
                     <l n="3">at tu sacrati contentus imagine pomi</l>
                     <l n="4"> fac ueros fructus ille, Priape, ferat.</l>
                 </div>
                 
                 <div type="textpart" subtype="poem" n="43">
-                    <l n="1">uelle quid hanc dicas, quamuis sim ligneus, adstans,</l>
+                    <l n="1">uelle quid hanc dicas, quamuis sim ligneus, <app>
+                        <lem resp="#Baehrens">adstans</lem>
+                        <rdg wit="#Os">hastam</rdg>
+                    </app>,</l>
                     <l n="2"> oscula dat medio si qua puella mihi?</l>
-                    <l n="3">augure non opus est: 'in me' (mihi credite), dicit</l>
-                    <l n="4"> 'Utatur ueris ueribus hasta rudis'.</l>
+                    <l n="3">augure non opus est: 'in me' (mihi credite), <app><lem resp="#Baehrens">dicit</lem><rdg wit="#Os">dixit</rdg></app></l>
+                    <l n="4"> '<app><lem resp="#Baehrens">Utatur</lem><rdg wit="#Os">Utetur</rdg></app> ueris <app>
+                        <lem resp="#Baehrens">uiribus</lem>
+                        <rdg wit="#Os">usibus</rdg>                    
+                    </app> hasta rudis'.</l>
                 </div>
 
                 <div type="textpart" subtype="poem" n="44">
@@ -545,7 +578,16 @@
                     <l n="4">'heus' inquit 'tibi dicimus, cinaede,</l>
                     <l n="5">uras te licet usque torqueasque,</l>
                     <l n="6">num tandem prior es puella, quaeso,</l>
-                    <l n="7">quod sunt, mentula quos habet, capilli?'</l>
+                    <l n="7">
+                        <app>
+                            <lem resp="#Baehrens">Quoi</lem>
+                            <rdg wit="#H #V">Quam</rdg>
+                            <rdg wit="#A #L">Qua</rdg>
+                        </app>
+                        <app>
+                            <lem resp="#Baehrens" wit="#A">sint</lem>
+                            <rdg wit="#H #V #L">sunt</rdg>
+                        </app>, mentula quos habet, capilli?'</l>
                 </div>
                 
                 <div type="textpart" subtype="poem" n="46">
@@ -591,7 +633,14 @@
                     <l n="3">et nec dat mihi nec negat daturam,</l>
                     <l n="4">causas inuenit usque differendi.</l>
                     <l n="5">quae si contigerit fruenda nobis,</l>
-                    <l n="6">totam cum paribus, Priape, nodis</l>
+                    <l n="6">
+                        totam 
+                        <app>
+                            <lem resp="#Baehrens">cum paribus, Priape, nodis</lem>
+                            <rdg wit="#A #Ls">comparibus, Priape, nostris</rdg>
+                            <rdg wit="#H #Vs">similibus, Priape, nostris</rdg>
+                        </app>
+                    </l>
                     <l n="7">cingemus tibi mentulam coronis.</l>
                 </div>
                 
@@ -608,7 +657,7 @@
                     <l n="10">sorbumue uentres lubricos moraturum.</l>
                     <l n="11">praesigne rami nec mei ferunt morum</l>
                     <l n="12">nucemue longam, quae uocatur Albana,</l>
-                    <l n="13">amygdalumue flore purpurae fulgens.</l>
+                    <l n="13">amygdalumue flore <app><lem resp="#Baehrens">purpurae</lem><rdg wit="#Os">purpureo</rdg></app> fulgens.</l>
                     <l n="14">non brassicarum ferre glorior caules</l>
                     <l n="15">betasue, quantas hortus educat nullus,</l>
                     <l n="16">crescensue semper in suum caput porrum.</l>
@@ -679,14 +728,12 @@
                     <l n="3">quae forsan potuisset esse nutrix</l>
                     <l n="4">Tithoni Priamique Nestorisque,</l>
                     <l n="5">illis ni pueris anus fuisset,</l>
-                    <l n="6">ne desim sibi, me rogat, fututor.</l>
+                    <l n="6">ne <app><lem resp="#Baehrens">desim</lem><rdg wit="#V">desit</rdg></app> sibi, me rogat, fututor.</l>
                     <l n="7">quid si nunc roget, ut puella fiat?</l>
                     <l n="8">
                         <app>
-                            <rdgGrp type="semantic">
-                                <rdg resp="#Baehrens">si nummos tamen haec habet, puella est.</rdg>
-                                <rdg wit="#V">ut spurium damnarunt Barthius et Antonius</rdg>
-                            </rdgGrp>
+                            <lem resp="#Baehrens">si nummos tamen haec habet, puella est.</lem>
+                            <rdg wit="#V">ut spurium damnarunt Barthius et Antonius</rdg>
                         </app>
                     </l>
                 </div>
@@ -694,13 +741,11 @@
                 <div type="textpart" subtype="poem" n="58">
                     <l n="1">Quicumque nostram fur fefellerit curam,</l>
                     <l n="2"><app>
-                        <rdgGrp type="semantic">
-                            <rdg resp="#Baehrens">effeminato inane prurita lumbo</rdg>
-                            <rdg wit="#H #Ls">effeminato imminet procul culo;</rdg>
-                            <rdg wit="#Vs">effeminato iminet procul culo;</rdg>
-                            <rdg wit="#V">effeminato inminet procu culo;</rdg>
-                            <rdg wit="#O">effeminato inminet procul dubio;</rdg>
-                        </rdgGrp>
+                        <lem resp="#Baehrens">effeminato inane prurita lumbo</lem>
+                        <rdg wit="#H #Ls">effeminato imminet procul culo;</rdg>
+                        <rdg wit="#Vs">effeminato iminet procul culo;</rdg>
+                        <rdg wit="#V">effeminato inminet procu culo;</rdg>
+                        <rdg wit="#O">effeminato inminet procul dubio;</rdg>
                         </app>
                     </l>
                     <l n="3">quaeque hic proterua carpserit manu poma</l>
@@ -758,10 +803,8 @@
                     <l n="16">solet uenire cum suo fututore,</l>
                     <l n="17">quae tot figuras, quot Philaenis enarrat,</l>
                     <l n="18"><app>
-                        <rdgGrp type="semantic">
-                            <rdg resp="#Baehrens">Commenta bis</rdg>
+                            <lem resp="#Baehrens" type="semantic">Commenta bis</lem>
                             <rdg wit="#O">non inuentis</rdg>
-                        </rdgGrp>
                     </app>, pruriginosa discedit.</l>
                 </div>
 
@@ -811,7 +854,13 @@
                     <l n="16"> ad citharam, cithara tensior ipse sua.</l>
                     <l n="17">nobilis hinc nata nempe incipit Ilias ira:</l>
                     
-                    <l n="18"> principium sacri carminis <choice><orig resp="#Baehrens">ile</orig><corr resp="#TClerice #Ls"/></choice> fuit.</l>
+                    <l n="18"> principium sacri carminis 
+                        <app>
+                            <lem resp="#Baehrens">ile</lem>
+                            <rdg resp="#Ls">ille</rdg>
+                            <rdg resp="#H #V #A">illa</rdg>
+                        </app>
+                        fuit.</l>
                     <l n="19">altera materia est error fallentis Ulixei;</l>
                     <l n="20"> si uerum quaeras, hunc quoque mouit amor.</l>
                     <l n="21">hic legitur radix, de qua flos aureus exit,</l>
